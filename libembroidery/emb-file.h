@@ -15,16 +15,10 @@ extern "C" {
 #else
 
 #include <stdio.h>
+/*Merge conflict area*/
 typedef struct EmbFile_
 {
-#ifdef ARDUINO
-    int junk; /* ARDUINO TODO: temporary build fix. remove when complete */
-#else
-    FILE* file;
-<<<<<<< HEAD
-#endif /* ARDUINO */
-=======
->>>>>>> 755eeb00db6c8760b753fdf09f3a9511a264dc19
+	FILE* file;	
 } EmbFile;
 #endif /* ARDUINO */
 
